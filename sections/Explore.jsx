@@ -28,14 +28,14 @@ const Explore = () => {
           }
           textStyles="text-center"
         />
-        <div className="mt-[50px] flex lg-flow-row flow-col min-h-[70vh] gap-5">
+        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {exploreWorlds.map((world, i) => (
             <ExploreCard
               key={world.id}
               {...world}
               i={i}
               active={active}
-              handleClicK={setActive}
+              handleClick={setActive}
             />
           ))}
         </div>
