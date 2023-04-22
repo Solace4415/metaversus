@@ -32,6 +32,24 @@ const Footer = () => (
 
       <div className="flex flex-col">
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
+        <div className="flex items-center justify-between flex-wrap gap-4">
+          <h4 className="font-extrabold uppercase text-[24px] text-white">
+            Metaversus
+          </h4>
+          <p className="font-normal text-white opacity-50 text-[14px]">
+            Copyright © 2021 - 2022 Metaversus. All rights reserved.
+          </p>
+          <div className="flex gap-4">
+            {socials.map((social) => (
+              <img
+                key={social.name}
+                src={social.url}
+                alt="social"
+                className="object-contain cursor-pointer w-[24px] h-[24px]"
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   </motion.footer>
