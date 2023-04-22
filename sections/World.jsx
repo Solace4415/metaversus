@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { TypingText, TitleText } from "../components";
 import styles from "../styles";
-import { newFeatures } from "../constants";
 import { staggerContainer, fadeIn } from "../utils/motion";
 
 const World = () => (
